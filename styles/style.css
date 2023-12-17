@@ -245,6 +245,8 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px; /* 175% */
+  padding: 7px 0;
+  display: block;
 }
 input {
   width: 323px;
