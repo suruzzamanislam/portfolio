@@ -96,15 +96,15 @@ nav > ul > li > a:hover {
 .dev {
   position: absolute;
   transform: rotate(-90deg);
-  top: 253px;
-  left: -220px;
+  top: 268px;
+  left: -266px;
   font-size: 70px;
   color: #a4a3a1;
   font-weight: 800;
   letter-spacing: 20px;
 }
 main {
-  width: 1140px;
+  width: 90%;
   margin: auto;
 }
 .about-section {
@@ -230,7 +230,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 1140px;
+  width: 90%;
   margin: auto;
 }
 .f-content h2,
@@ -264,4 +264,173 @@ textarea {
   outline: none;
   background-color: white;
   margin-bottom: 15px;
+}
+
+/* responsive style here */
+
+/* Mobile Device Responsive or small */
+@media screen and (max-width: 576px) {
+  /* header style */
+  nav {
+    padding: 5px 22px;
+  }
+  .nav-title {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+  nav > ul > li {
+    padding: 5px 5px;
+    font-size: 15px;
+  }
+  .hero-area {
+    padding: 30px 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: none;
+  }
+  .hero-img {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .dev {
+    display: none;
+  }
+  .hero-img img {
+    width: 80%;
+  }
+  .btn-primary {
+    padding: 3px 10px;
+  }
+  .hero-content {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-content h3 {
+    font-size: 20px;
+    display: inline;
+  }
+  .hero-content h2 {
+    font-size: 25px;
+    padding: 2px 0;
+    display: inline;
+  }
+  .hero-content p {
+    font-size: 15px;
+    padding: 13px 0px 20px;
+  }
+  .btn-secendary {
+    padding: 3px 31px;
+    border: 1px solid orange;
+  }
+
+  /* main style */
+  main {
+    width: 100%;
+  }
+  .title {
+    color: #181818;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  .content {
+    font-size: 15px;
+  }
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+  }
+  .child-box {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .child-box p,
+  .child-box h3 {
+    display: inline;
+  }
+  .child-box p {
+    font-size: 16px;
+  }
+  .child-box h3 {
+    font-size: 18px;
+  }
+  .about-section {
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .what-i-do {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .card {
+    width: calc(100%-10px);
+    padding: 0 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+  }
+  .child-card {
+    padding: 10px;
+  }
+  .card-title {
+    padding: 9px 0;
+  }
+  .card-content {
+    line-height: 20px;
+  }
+  .child-summary-box h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  .child-summary-box h3 {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .summary-content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .child-summary-box .date {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  .summary {
+    padding: 0 20px;
+  }
+  .summary-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  /* footer style */
+  footer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 100px 0;
+  }
+  .footer {
+    padding: 0 20px;
+    flex-direction: column;
+    width: calc(100%-20px);
+  }
+  .f-content h2,
+  .f-form h2 {
+    font-size: 25px;
+    padding: 9px 0;
+  }
+  .f-content small {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px 0px;
+  }
 }
